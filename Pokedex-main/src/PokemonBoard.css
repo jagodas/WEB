@@ -1,0 +1,85 @@
+.App {
+  text-align: center;
+}
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.pokemon-board {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 20px;
+}
+
+.pokemon-card {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  text-align: center;
+  position: relative;
+}
+
+.pokemon-card img {
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.previous-button {
+  background-color: #d1d1d1;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.previous-button:disabled {
+  background-color: #b8b8b8;
+  cursor: not-allowed;
+}
+
+.next-button {
+  background-color: #d1d1d1;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.next-button:hover {
+  background-color: #a5a5a5;
+}
+
+.next-button:active {
+  background-color: #7c7c7c;
+}
+
+.pokemon-number {
+  background-color: #ee1515;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  height: 2.5rem;
+  line-height: 2.5rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 0.5rem;
+  text-align: center;
+  width: 2.5rem;
+}
